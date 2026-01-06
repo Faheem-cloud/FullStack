@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Details Form</title>
+  <link rel="stylesheet" href="student_form.css" />
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Student Details</h1>
+      <p class="sub">Enter your VTU number, Email, and Phone Number</p>
+
+      <form id="studentForm" novalidate>
+        <div class="field">
+          <label for="vtu">VTU Number</label>
+          <input
+            id="vtu"
+            name="vtu"
+            type="text"
+            placeholder="Eg: VTU24988"
+            autocomplete="off"
+          />
+          <small class="hint">Format: VTU + 5 digits (example: VTU24988)</small>
+          <div class="error" id="vtuErr"></div>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="Eg: name@gmail.com"
+            autocomplete="off"
+          />
+          <div class="error" id="emailErr"></div>
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            placeholder="10-digit number"
+            autocomplete="off"
+          />
+          <small class="hint">Indian format: 10 digits (example: 9876543210)</small>
+          <div class="error" id="phoneErr"></div>
+        </div>
+
+        <div class="actions">
+          <button type="submit">Submit</button>
+          <button type="button" class="secondary" id="clearBtn">Clear</button>
+        </div>
+
+        <div class="success" id="successMsg"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="student_form.js"></script>
+</body>
+</html>

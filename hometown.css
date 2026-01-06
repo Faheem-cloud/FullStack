@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+    background-color: #eef2f7;
+    padding: 40px;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.card {
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.card p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* Color variations */
+.blue {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+}
+
+.green {
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+}
+
+.orange {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+.purple {
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+}
